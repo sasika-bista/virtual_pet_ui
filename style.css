@@ -1,25 +1,26 @@
 body {
-  background-image: url("room.jpg");
+  background-image: url("roomnew.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: left;
   /* min-width: 760;
   min-height: 741; */
 }
 
 .container {
-  border: 3px solid black;
+  border: 3px solid transparent;
   /* my scrren size
   width: 1515px;
   height: 720px; */
   margin-top: 50px;
   margin: 50px 50px 0px 50px;
+  box-shadow: 20px 20px 30px 20px rgba(0, 0, 0, 0.5);
 }
 .pet {
   position: absolute;
   /* border: 2px solid red; */
-  margin-left: 35%;
+  margin-left: 30%;
   width: 20rem;
   height: 25rem;
   background-image: url("catsit.png");
@@ -117,11 +118,69 @@ body {
   border: 2px solid blue;
   margin: 250px 0px 00px 0px;
   height: 10rem;
-  padding: 1rem;
+  padding: 2%;
   /* margin: 450px 20px 20px 20px; */
+  position: relative;
+}
+.top_btn {
+  display: flex;
+  justify-content: space-between;
+}
+.feed {
+  width: 7rem;
+  height: 3.5rem;
+  border: 5px solid #ffd6ff;
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #e7c6ff;
+  color: #9b79ff;
 }
 
-.feed {
+.bath {
+  width: 7rem;
+  height: 3.5rem;
+  border: 5px solid #ffd6ff;
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #e7c6ff;
+  color: #9b79ff;
+}
+
+.bottom_btn {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4%;
+}
+
+.play {
+  width: 7rem;
+  height: 3.5rem;
+  border: 5px solid #ffd6ff;
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #e7c6ff;
+  color: #9b79ff;
+}
+
+.read {
+  width: 7rem;
+  height: 3.5rem;
+  border: 5px solid #ffd6ff;
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #e7c6ff;
+  color: #9b79ff;
+}
+
+.sleep {
   width: 7rem;
   height: 3.5rem;
   border: 5px solid #ffd6ff;
@@ -136,5 +195,19 @@ body {
 .feedbtn :hover {
   color: #ffd6ff;
   background-color: #9b79ff;
-  border: #e7c6ff;
+  border: 5px solid #e7c6ff;
+}
+
+.bathbtn :hover {
+  color: #ffd6ff;
+  background-color: #9b79ff;
+  border: 5px solid #e7c6ff;
+}
+
+.playbtn :hover,
+.readbtn :hover,
+.sleepbtn :hover {
+  color: #ffd6ff;
+  background-color: #9b79ff;
+  border: 5px solid #e7c6ff;
 }
