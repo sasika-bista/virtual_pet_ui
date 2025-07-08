@@ -4,8 +4,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: left;
-  /* min-width: 760;
-  min-height: 741; */
+  min-width: 767px;
+  min-height: 600px;
 }
 
 .container {
@@ -142,13 +142,6 @@ body {
   box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   height: 80%;
-  /* background: linear-gradient(
-    to right,
-    #c8b6ff 0%,
-    #c8b6ff 80%,
-    white 80%,
-    white 100%
-  ); */
   width: 180px;
   transition: width 0.5s ease-in-out;
   padding-left: 10px;
@@ -249,4 +242,37 @@ body {
   color: #ffd6ff;
   background-color: #9b79ff;
   border: 5px solid #e7c6ff;
+}
+
+@media (max-width: 767px), (max-height: 741px) {
+  body {
+    overflow: auto;
+  }
+
+  .container {
+    min-width: 150px;
+    min-height: 100vh;
+    padding-left: 5px;
+  }
+
+  .pet {
+    width: 60%;
+    height: auto;
+  }
+
+  .inputName {
+    position: static;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .top_btn {
+    flex-direction: column;
+    align-items: left;
+  }
+  .bottom_btn {
+    flex-direction: column;
+    align-items: left;
+    margin-top: 0%;
+  }
 }
